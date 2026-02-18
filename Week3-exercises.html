@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 101</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .px-unit {
+            font-size: 24px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .pt-unit {
+            font-size: 18pt;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .em-unit {
+            font-size: 1.5em;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .rem-unit {
+            font-size: 2rem;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Font Size Units</h1>
+
+    <div class="px-unit">
+        This div uses <strong>px</strong> (pixels): 24px - absolute unit
+    </div>
+
+    <div class="pt-unit">
+        This div uses <strong>pt</strong> (points): 18pt - absolute unit
+    </div>
+
+    <div class="em-unit">
+        This div uses <strong>em</strong>: 1.5em - relative to parent font size
+    </div>
+
+    <div class="rem-unit">
+        This div uses <strong>rem</strong>: 2rem - relative to root font size
+    </div>
+</body>
+</html>
