@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@
         }
 
         .pt-unit {
-            font-size: 18pt;
+            font-size: 10pt;
             border: 1px solid #ccc;
             padding: 10px;
             margin-bottom: 10px;
@@ -39,23 +40,51 @@
         }
     </style>
 </head>
+
 <body>
     <h1>CSS Font Size Units</h1>
 
     <div class="px-unit">
-        This div uses <strong>px</strong> (pixels): 24px - absolute unit
+        px stands for pixel. This div uses <strong>px</strong> (pixels): 24px - absolute unit which means the units are
+        fixed and the
+        length or size expressed will appear exactly as specified, 1px=1/96th of 1inch
     </div>
 
     <div class="pt-unit">
-        This div uses <strong>pt</strong> (points): 18pt - absolute unit
+        pt stands for point. This div uses <strong>pt</strong> (points): 10pt - absolute unit, 1pt = 1/72nd of 1inch,
+        this is another absolute unit.
+        Traditionally it is used in print media and typography. On screens, browers automatically convert points to
+        pixels, which does vary depending
+        on screen resolution and settings, but 1pt ~ 1.333px.
     </div>
 
     <div class="em-unit">
-        This div uses <strong>em</strong>: 1.5em - relative to parent font size
+        This div uses <strong>em</strong>: 1.5em - relative to parent font size, so if the parent element has a font
+        size of 16px, then 1.5em would be 24px.
+        If the parent element's font size changes, the size of this div will also change accordingly.Relative length
+        units specify a length relative to another length property.
+        Relative length units scale better between different rendering medium.
     </div>
 
     <div class="rem-unit">
-        This div uses <strong>rem</strong>: 2rem - relative to root font size
+        This div uses <strong>rem</strong>: 2rem - relative to root font size, so if the root element (html) has a font
+        size of 16px,
+        then 2rem would be 32px. Similar to em, but it always refers to the root element's font size, regardless of
+        nesting.
+    </div>
+
+    <h1>New Concepts-MDN Docs</h1>
+
+    <div>
+        <h3>Overflow</h3>
+        <p>Overflow is a CSS property that controls what happens when content exceeds the dimensions of its container.
+            It can be set to values like 'visible', 'hidden', 'scroll', or 'auto' to determine how excess content is
+            handled.
+            Everything in CSS is a box. You can constrain the size of these boxes by assigning values such as width and
+            height.
+            Overflow happens when there is too much content to fit in a box. CSS provides various tools to manage
+            overflow.</p>
     </div>
 </body>
+
 </html>
